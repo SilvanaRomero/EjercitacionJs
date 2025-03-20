@@ -75,3 +75,28 @@ let nombres = ["Lucas", "Martin", "Ana", "Nicolas", "Belen"];
 for ( let i=0; i< (nombres.length); i++) {
     console.log(nombres[i]);
 }
+
+// 7 - Crear un array con numeros del 1 al 10 y sumarlos
+
+numeros1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+suma = 0;
+
+for ( let i = 0; i < (numeros1.length); i++){
+    suma += numeros1[i];
+}
+console.log(`La suma total es: ${suma}`);
+
+
+// Invertir el array
+numeros1Invertido = numeros1.reverse();
+console.log (numeros1Invertido);
+console.log(numeros1Invertido.join(" , ")); //convierte en un string
+
+//Unir dos arrays en uno solo.
+
+let hombres = ["Carlos", "Juan", "Pedro"];
+let mujeres = ["Ana", "Laura", "Gilda"];
+
+let personas = hombres.concat(mujeres);
+
+console.log(personas);
